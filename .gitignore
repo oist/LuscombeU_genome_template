@@ -1,0 +1,8 @@
+*maf.gz
+*.nextflow*
+*multiqc*
+*pipeline*
+*cutn*
+*assemblyscan*
+*train*
+
