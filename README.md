@@ -4,7 +4,6 @@ Template repository for new genomes
 ## Description
 XXX diploid chromosomal genome assembled using XXX. The contigs produced by XXX are phased sequences from a single haplotype. The parental origin of the contigs (paternal, maternal) is not known
 
-
 ## Files
 - pairwise_alignment:
 	- pairwise alignment to reference (REFERENCE GENOME)
@@ -14,7 +13,13 @@ XXX diploid chromosomal genome assembled using XXX. The contigs produced by XXX 
 - busco: busco genome mode result 
 
 ## About the assemblies
-Assemblies created from contigs are written in `.usa` files (http://emboss.open-bio.org/html/use/ch06s06.html)
+- Assemblies created from contigs are written in `.usa` files (http://emboss.open-bio.org/html/use/ch06s06.html)
+- Priority is given to the following (for primary):
+	- contiguity
+	- telomere presence
+	- size
+- https://github.com/johannesnicolaus/find_telomeres was used to find telomeres
+- https://nf-co.re/pairgenomealign was used for pairwise genome alignment
 
 ## Primary assembly details
 
